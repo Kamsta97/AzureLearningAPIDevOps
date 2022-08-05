@@ -17,4 +17,9 @@ app.MapGet("/ping", () =>
 })
 .WithName("GetPing");
 
+app.MapPost("/hello", (string name) =>
+{
+    return "Hello " + name + "! Learning Azure in progress...";
+});
+
 app.Run();
